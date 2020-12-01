@@ -25,6 +25,7 @@ if [[ $yes == да ]]; then
   elif [[ $yes != Нет ]]; then
   echo -e "\e[31m                              Очень жаль\e[0m";
   sleep 3s
+termux-vibrate
   exit
 fi
 
