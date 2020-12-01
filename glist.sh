@@ -20,17 +20,17 @@ echo
 read yes
 
 if [[ $yes == да ]]; then
-  echo "\e[32m                                Отлично\e[0m";
+  echo -e "\e[32m                                Отлично\e[0m";
   echo
   elif [[ $yes != Нет ]]; then
-  echo "\e[31m                              Очень жаль\e[0m" ;
+  echo -e "\e[31m                              Очень жаль\e[0m";
   sleep 3s
   exit
 fi
 
 
 echo -e "\e[90m                                Кто вы? \e[0m"; 
-	echo -n "\e[94m                               Ваше имя: \e[0m ";
+	echo -n -e "\e[94m                               Ваше имя: \e[0m ";
 	
 	read Name 
 echo
